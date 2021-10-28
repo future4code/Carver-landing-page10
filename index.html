@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="styles/general.css">
+    <title>F4Bank</title>
 </head>
 
 
@@ -13,51 +13,56 @@
     <header>
         <nav>
         <div class="nav-brand">
-            <img href="logo" src="https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F28b44fa9-b34c-4321-a2c2-7e425f680408%2Ff4bank.png?table=block&id=a7a844f0-a9fe-4a92-8b97-08e82f86309a&spaceId=f97190af-c9c2-4592-9ae2-6311b6b728de&width=1000&userId=e2ad3201-14f4-424d-97a7-2a0c4cfbf5f7&cache=v2"/>
+            <img href="logo" src="images/f4bank-2.png"/>
         </div>
         <div>
             <ul>
                <li>
-                   <a href="#description-bank">Quem Somos</a>
+                   <a class="nav-item" href="#description-row"">Quem Somos</a>
                 </li> 
                <li>
-                   <a href="#product">Produtos</a>
+                   <a class="nav-item" href="#product">Produtos</a>
                 </li> 
-               <li>Contato</li> 
+               <li class="nav-item">Contato</li> 
             
                <li>
-                   <a href="faq.html">FAQ</a>
+                   <a class="nav-item" href="faq.html">FAQ</a>
                 </li> 
-               <li>
-                   <a href="login.html">Login</a>
+               <li class="nav-login">
+                    <img src="https://image.flaticon.com/icons/png/128/1243/1243949.png" alt="login">
+                   <a href="login.html" target="_blank">Login</a>
                 </li> 
             </ul>
         </div>
         </nav>
     </header>
-
-<!-- LOGIN -->
     <main>
-        <div>
-            <label for="username">CPF:</label>
-            <input type="text" id="username" name="CPF">
+        <div class="home-first-container">
+            <img src="https://image.freepik.com/free-psd/woman-with-black-friday-concept-with-credit-card_23-2148710574.jpg">
+            <div>
+                <h1>Simples, prático e inovador: a revolução começa com o F4Bank</h1>
+                <p>Faça como outros 50 milhões de brasileiros e veja como é fácil ter o controle de suas finanças em suas mãos aliada a segurança de um banco de 120 anos.</p>
+            </div>
         </div>
-        
-        <div>
-            <label for="pass">Senha (8 characters minimum):</label>
-            <input type="senha" id="pass" name="senha"
-                   minlength="8" required>
-        </div>
-        
-        <input type="submit" value="Sign in">
-        <img src="https://image.flaticon.com/icons/png/128/1243/1243949.png" alt="login">
 
 <!-- DESCIÇÃO QUEM SOMOS -->
-        <h1 id="description-bank">Quem somos?</h1>
-        <p>O F4Bank é um banco público brasileiro sem complicações. Com atendimento online pelo site ou aplicativo, onde os clientes podem consultar e resolver grande maioria das demandas.</p>
-        <p>Com o nosso cartão, nossos clientes podem ter a tranquidade de não pagar taxas e com a "Conta corrente digital", reforçando a segurança de um banco tradicional com décadas de história no país, somado com  a tecnologia. </p>
+        <div id="description-row">
+            <h1 id="description-bank">Quem somos?</h1>
+            <div>
+                <p>O F4Bank é um banco público brasileiro sem complicações. Com atendimento online pelo site ou aplicativo, onde os clientes podem consultar e resolver grande maioria das demandas.</p>
+            </div>
+        </div>
 
-        <img src="https://image.freepik.com/fotos-gratis/homem-com-excesso-de-peso-de-oculos-vestindo-uma-camiseta-preta-segurando-um-smartphone-e-mostrando-um-cartao-de-credito-parecendo-confiante-sobre-a-laranja_141793-58710.jpg" alt="rapaz com cartão">
+        <div id=credit-card-row>
+            <div id="credit-card-description">
+                <h1>A traquilidade em suas mãos</h1>
+                <p>Com o nosso cartão, nossos clientes podem ter a tranquidade de não pagar taxas e com a "Conta corrente digital", reforçando a segurança de um banco tradicional com décadas de história no país, somado com  a tecnologia.</p>
+            </div>
+            
+            <img src="https://image.freepik.com/fotos-gratis/homem-com-excesso-de-peso-de-oculos-vestindo-uma-camiseta-preta-segurando-um-smartphone-e-mostrando-um-cartao-de-credito-parecendo-confiante-sobre-a-laranja_141793-58710.jpg" alt="rapaz com cartão">
+        </div>
+
+        
 
  <!--    PRODUTOS  -->
         <h1 id="product-bank">Produtos</h1>
@@ -84,7 +89,7 @@
             <h3>MODELO INTERNACIONAL</h3>
         </li>
 
-        <img src="https://image.freepik.com/free-psd/woman-with-black-friday-concept-with-credit-card_23-2148710574.jpg">
+        
         
 <!-- FAQ -->        
         <h1 id="faq">FAQ</h1>
