@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*********************************** HEADER ***********************************/
+nav {
+    background-color: #ff914d;
+    display: flex;
+    height: 55px;
+    align-items: center;
+    position: fixed;
+    width: 100%
+}
+
+.nav-brand img{
+    width: 19%;
+    margin-left: 1.5rem;
+}
+
+nav ul{
+    display: flex;
+}
+
+ul a {
+    text-decoration: none;
+    color: #FEFBF3;
+}
+
+nav li {
+    list-style-type: none;
+    color: #FEFBF3;
+    position: relative;
+    right: 22rem;
+}
+
+.nav-item {
+    padding-right: 2.5rem;
+}
+
+.nav-login {
+    position: relative;
+    left: 21rem
+}
+
+li img {
+    width: 10%;
+    padding-right: 0.2rem;
+}
+
+
+/*********************************** INDEX ***********************************/
+.home-first-container {
+    background-color: #fbb12c;
+    display: flex;
+    height: 41rem;
+}
+
+.home-first-container h1, .home-first-container p {
+    position: relative;
+    top: 40%;
+    left:5%;
+    color: #FEFBF3;
+    width: 90%;
+}
+
+.home-first-container h1 {
+    font-size: 42px;
+}
+
+.home-first-container p {
+    font-size: 24px;
+    padding-top: 23px;
+}
+
+#description-row {
+    height: 20rem;
+    background-color: #FEFBF3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#description-row div {
+    width: 45%;
+    padding-top: 20px;
+    font-size: 22px;
+}
+
+#credit-card-row {
+    /* background-color: #fbb12c; */
+    background-image: linear-gradient(to bottom, #fbb12c, #fc9d00);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#credit-card-row div{
+    color: #FEFBF3;
+    font-size: 22px;
+    width: 45%;
+    padding-left: 2rem;
+}
+
+#credit-card-row div p{
+    padding-top: 1.5rem;
+}    
+
+/* podes add esses por favor? */
+.negrito {
+    font-weight: bold;
+}
+
+/* .botao{
+    
+} */
