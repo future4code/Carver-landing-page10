@@ -4,177 +4,78 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <link rel="stylesheet" href="styles/general.css">
-
     <link rel="stylesheet" href="style.css">
-
-    <title>Document</title>
-
-
     <title>F4Bank | Login</title>
 
 </head>
 <body>
-    <header>
-        <nav>
-
-        <div class="nav-brand">
-            <a href="index.html"> <img class="logo" src="images/f4bank-2.png" alt="Logo" target="_blank"> </a>
-        </div>
-        <div>
-            <ul>
-               <li>
-                   <a class="nav-item" href="index.html">Quem Somos</a>
-                </li> 
-                <li>
-                <!-- tá cortando a "cabeça" do nome "produtos", provavelmente precisa colocar uma margem -->
-                   <a class="nav-item" href="index.html">Produtos</a>
-                </li> 
-                <li>
-                   <a class="nav-item" href="faq.html">FAQ</a>
-                </li> 
-            </ul>
-        </div>
-        </nav>
-
-
-            <div class="nav-brand">
-                <img href="logo" src="https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F28b44fa9-b34c-4321-a2c2-7e425f680408%2Ff4bank.png?table=block&id=a7a844f0-a9fe-4a92-8b97-08e82f86309a&spaceId=f97190af-c9c2-4592-9ae2-6311b6b728de&width=1000&userId=e2ad3201-14f4-424d-97a7-2a0c4cfbf5f7&cache=v2"/>
-
-
-            <div class="nav-brand">
-                <a href="index.html"> <img class="logo" src="images/f4bank-2.png" alt="Logo" target="_blank"> </a>
-
-            </div>
-            <div>
-                <ul>
-                   <li>
-                       <a href="index.html#description-bank">Quem Somos</a>
-                    </li> 
-                   <li>
-
-                       <a href="index.html#product-bank">Produtos</a>
-                    </li> 
-                   <li>Contato  </li> 
-
-                       <a href="index.html#product">Produtos</a>
-                    </li> 
-                   <li>Contato</li> 
-
-                
-                   <li>
-                       <a href="faq.html">FAQ</a>
-                    </li> 
-                </ul>
-            </div>
-            </nav>
-
-    </header>
-
-    <main id="login-row">
-        <div id="login-form">
-            <div>
-                <!-- LOGIN -->
-                <label for="username">CPF:</label>
-                <input type="text" id="username" name="CPF">
+    <div id="login-container">
+        <header>
+            <a href="index.html"> <img class="logo" src="images/f4bank.png" alt="Logo" target="_blank"> </a>
+        </header>
+        <main id="login-row">
+            <div id="login-form">
+                <h2>Login</h2>
+                <form action="">
+                    <div id="cpf">
+                        <!-- LOGIN -->
+                        <label for="username">CPF:</label>
+                        <input type="text" id="username" name="CPF">
+                    </div>
+                    
+                    <div id="password">
+                        <label for="pass">Senha:</label>
+                        <input type="senha" id="pass" name="senha" 
+                            minlength="8" required>
+                    </div>
+                    <button>CONTINUAR</button>
+                </form>
+                <div id="login-questions">
+                    <p>Esqueci minha senha</p>
+                    <p>Ainda não sou cliente</p>
+                </div>
             </div>
             
-            <div>
-                <label for="pass">Senha (8 caracteres no mínimo):</label>
-                <input type="senha" id="pass" name="senha"
-                       minlength="8" required>
-            </div>
+        </main>
+    </div>
+    
+
+    <!-- RODAPÉ -->
+    <footer>
+        <!-- colocar os botões com a mãozinha -->
+                <div class="footer-links">
+                    <li>
+                        <a class = "botao" href="index.html">INÍCIO</a>
+                    </li>
+                    <li>
+                        <a class = "botao" href="trabalhe-conosco.html">TRABALHE CONOSCO</a>
+                    </li>
+                    <li>
+                        <a class = "botao" href="faq.html">FAQ</a>
+                    </li>
+                </div>
+                    
+        
+            <!-- CONTATO -->
+                <div class="footer-contact">
+                    <h4>Contato:</h4>
+                    <p> email-de-contato@f4bank.com.br</p>
+                    <p> Chat online
+                        <img class = "botao" src="https://image.flaticon.com/icons/png/512/1156/1156472.png" alt="balão de chat">
+                    </p>
+                </div>
+                    <div class="footer-social-media">
+                        <h4>Nos siga nas redes sociais</h4>
+                        <a href="https://www.instagram.com/"> <img class="botao-redes-sociais" src="https://image.flaticon.com/icons/png/128/1216/1216878.png" alt="Instagram" target="_blank"> </a>
+                        <a href="https://facebook.com/"> <img class="botao-redes-sociais" src="https://image.flaticon.com/icons/png/512/1051/1051309.png" alt="Facebook" target="_blank"> </a>
+                        <a href="https://twitter.com/"> <img class="botao-redes-sociais" src="https://image.flaticon.com/icons/png/128/1216/1216864.png" alt="Twitter" target="_blank"> </a>
+                    </div>
             
-            <input type="submit" value="Sign in">
-
-    <main>
-
-        <!-- LOGIN -->
-        <div>
-            <label for="username">CPF   :</label>
-            <input type="text" id="username" name="CPF">
-        </div>
-        
-        <div>
-            <label for="pass">Senha (8 characters minimum):</label>
-            <input type="senha" id="pass" name="senha"
-                   minlength="8" required>
-        </div>
-        
-        <input type="submit" value="Sign in">
-        <img src="https://image.flaticon.com/icons/png/128/1243/1243949.png" alt="login">
-
-    </main>
-    <footer></footer>
-
-
-
-        </nav>
-    </header>
-    <main>
-        <div>
-            <!-- LOGIN -->
-            <label for="username">CPF:</label>
-            <input type="text" id="username" name="CPF">
-        </div>
-        
-        <div>
-            <label for="pass">Senha (8 caracteres no mínimo):</label>
-            <input type="senha" id="pass" name="senha"
-                   minlength="8" required>
-
-        </div>
-        <img src="https://image.freepik.com/fotos-gratis/tiro-de-mulheres-jovens-felizes-diversas-apontam-acima-no-item-de-presente-de-espaco-de-copia-ou-produto-estande-lado-a-lado-isolado-sobre-a-parede-amarela-promocao-de-pessoas-e-conceito-de-propaganda_273609-49734.jpg" alt="duas mulhes apontando pra cima">
-    </main>
-    <br><br><br><br>
-
-<!-- RODAPÉ -->
-<footer>
-    <!-- colocar os botões com a mãozinha -->
-            <div class="footer-links">
-                <li>
-                    <a class = "botao" href="index.html">INÍCIO</a>
-                </li>
-                <li>
-                    <a class = "botao" href="trabalhe-conosco.html">TRABALHE CONOSCO</a>
-                </li>
-                <li>
-                    <a class = "botao" href="faq.html">FAQ</a>
-                </li>
-            </div>
-                
-    
-        <!-- CONTATO -->
-            <div class="footer-contact">
-                <h4>Contato:</h4>
-                <p> email-de-contato@f4bank.com.br</p>
-                <p> Chat online
-                    <img class = "botao" src="https://image.flaticon.com/icons/png/512/1156/1156472.png" alt="balão de chat">
-                </p>
-            </div>
-                <div class="footer-social-media">
-                    <h4>Nos siga nas redes sociais</h4>
-                    <a href="https://www.instagram.com/"> <img class="botao-redes-sociais" src="https://image.flaticon.com/icons/png/128/1216/1216878.png" alt="Instagram" target="_blank"> </a>
-                    <a href="https://facebook.com/"> <img class="botao-redes-sociais" src="https://image.flaticon.com/icons/png/512/1051/1051309.png" alt="Facebook" target="_blank"> </a>
-                    <a href="https://twitter.com/"> <img class="botao-redes-sociais" src="https://image.flaticon.com/icons/png/128/1216/1216864.png" alt="Twitter" target="_blank"> </a>
-                </div>
-        
-
-    
-                
-                
-                <br><br>
-                <div class="referencia">
-                    <a href="https://br.freepik.com">Fotos e ícones - br.freepik.com</a>
-                </div>
-                
-        </footer>
-
-        <br><br>
-        <a href="https://br.freepik.com">Fotos e ícones - br.freepik.com</a>
+                    <div class="referencia">
+                        <a href="https://br.freepik.com">Fotos e ícones - br.freepik.com</a>
+                    </div>
+                    
     </footer>
-
-
 </body>
 </html>
