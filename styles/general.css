@@ -106,3 +106,7 @@ li img {
 #credit-card-row div p{
     padding-top: 1.5rem;
 }    
+
+.negrito {
+    font-weight: bold;
+}
