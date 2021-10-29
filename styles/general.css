@@ -27,12 +27,13 @@ ul a {
     color: #FEFBF3;
 }
 
-nav li {
+.menu li {
     list-style-type: none;
     color: #FEFBF3;
     position: relative;
     right: 22rem;
 }
+
 
 .nav-item {
     padding-right: 2.5rem;
@@ -49,164 +50,104 @@ nav li {
 }
 
 
-/*********************************** INDEX ***********************************/
-.home-first-container {
-    background-color: #fec530;
-    display: flex;
-    height: 35rem;
-}
-
-.home-first-container h1, .home-first-container p {
-    color: #FEFBF3;
-    margin-left: 40px;
-}
-
-.home-first-container h1{
-    margin-top: 200px;
-}
-
-  
-
-.home-first-container img {
-    height: 90%;
-    margin-top: 56px
-}
 
 
-.home-first-container h1 {
-    font-size: 42px;
-}
-
-.home-first-container p {
-    font-size: 24px;
-    padding-top: 23px;
-}
-
-#description-row {
-    height: 20rem;
-    background-color: #FEFBF3;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-#description-row div {
-    width: 45%;
-    padding-top: 20px;
-    font-size: 22px;
-}
-
-#credit-card-row {
-    /* background-color: #fbb12c; */
-    background-image: linear-gradient(to bottom, #fbb12c, #fc9d00);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-#credit-card-row div{
-    color: #FEFBF3;
-    font-size: 22px;
-    width: 45%;
-    padding-left: 2rem;
-}
-
-#credit-card-row div p{
-    padding-top: 1.5rem;
-}    
-
-section {
-    background-color: #fafafa;
-}
-
-#product-bank {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    padding-bottom:  3rem;
-}
-
-#product-bank h1, section h3 {
-    color: #fb8b38
-}
-
-#product-bank h1 {
-    font-size: 2.5rem;
-}
-
-#product-description {
-    display: flex;
-    flex-direction: column;    
-    width: 90%;
-    padding-bottom:  3rem;
-}
-
- section h3  {
-    padding-top: 20px;
-    text-align: center;
-    font-size: 24px;
-}
-
-#card-description {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-left: 80px;
-    padding: 30px 0 30px;
-}
-
-#card-description img {
-    width: 90%
-}
-
-#cashback {
-    display: flex;
-    justify-content: space-between;
-    margin-left: 15%; 
-}
-
-#cashback p {
-    padding: 20px;
-    text-align: justify;
-}
-
-#cashback p:first-child {
-    margin-right: 100px;
-}
-
-#section-text {
- margin-left: 80px;
-}
-
-#account-container {
-   display: flex;
-   align-items: center;
-   justify-content: space-around;
-   padding: 20px 0;
-   padding-bottom:  3rem;
-}
-
-#account-description  {
-    width: 40%
-}
-
-#account-description p {
-    padding-top:  1rem;
-    font-size: 18px;
-}
-
-#account-container img {
-    width: 25%
-}
 /* podes add esses por favor? */
 .negrito {
     font-weight: bold;
 }
 
+#ask-card-account button:hover{
+    cursor: pointer;
+    background-color: #f6af22;
+}
+
 /* .botao{
     
 } */
+
+/*********************************** FAQ ***********************************/
+#faq-row {
+    background-color: #fafafa;
+}
+
+#faq-subtitle {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#faq,  #faq-subtitle {
+
+    text-align: center;
+    padding: 20px 0px;
+    cursor: default;
+}
+
+#faq {
+    padding-top: 80px;   
+}
+
+#faq-section li {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 60px;
+    box-shadow: 0px 2px 5px darkgrey;
+    padding: 20px
+}
+
+#faq-section li p {
+    display: none;
+}
+
+#faq-section li:hover {
+    color: #fb8b38;
+    cursor: pointer;
+    height: 130px;
+    box-shadow: 0px 2px 5px darkgrey;
+}
+
+#faq-section li:hover p {
+    display: block;
+    padding-top: 20px;
+    text-align: justify;
+    line-height: 1.5rem;
+}
+
+#faq-section p {
+    color: black;
+    font-size: 18px;
+}
+
+#faq-section {
+    width: 90%;
+    padding-left: 50px;
+}
+
+/*********************************** LOGIN ***********************************/
+#login-row {
+    padding: 0px 350px;
+}
+
+#login-form {
+    position: relative;
+    top: 250px;
+    left: 100px
+}
+
+#login-form input {
+    border-style: solid;
+    border-width: 0px 0px 2px;
+    position: absolute; 
+    width:200px;
+}
+
+/*********************************** PRODUCT ***********************************/
+#product-container {
+    padding-top: 3.4rem;
+}
 
 /*********************************** CAREER ***********************************/
 
