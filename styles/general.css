@@ -342,6 +342,7 @@ footer h4:hover {
 
     body{
         width: 100%;
+        height: 100vh;
     }
     
     div{
@@ -445,9 +446,12 @@ footer h4:hover {
         text-align: justify;
     }
 
-    #ask-card-account {
+    #ask-card-account{
+       display: none;
+    }
+
+    form{
         display: none;
-        
     }
 
     #product-bank h1, section h3{
@@ -467,10 +471,6 @@ footer h4:hover {
         width: 100%;
         display: flex;
 
-    }
-
-    section #ask-card-account {
-        display: none;
     }
 
     form{
