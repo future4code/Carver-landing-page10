@@ -4,6 +4,7 @@
 }
 
 /*********************************** HEADER ***********************************/
+
 nav {
     background-color: #ff914d;
     display: flex;
@@ -95,7 +96,8 @@ ul a {
     justify-content: center;
     height: 60px;
     box-shadow: 0px 2px 5px darkgrey;
-    padding: 20px
+    padding: 20px;
+    background-color: #fb8b38;
 }
 
 #faq-section li p {
@@ -103,7 +105,7 @@ ul a {
 }
 
 #faq-section li:hover {
-    color: #fb8b38;
+    color: rgb(250, 250, 153);
     cursor: pointer;
     height: 130px;
     box-shadow: 0px 2px 5px darkgrey;
@@ -127,14 +129,52 @@ ul a {
 }
 
 /*********************************** LOGIN ***********************************/
-#login-row {
-    padding: 0px 350px;
+header img{
+    width: 40%;
 }
 
+#login-container {
+    background-color: #ff914d;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+
+} 
+
+#login-row {
+     margin: 30px;
+     height: 350px; 
+     
+}
+#login-row h2 {
+    text-align:center;
+}
+
+ 
 #login-form {
-    position: relative;
-    top: 250px;
-    left: 100px
+    width: 40%;
+    height: 300px;
+    border: 1px solid #fafafaee;
+    border-radius:15px;
+    background-color: #fafafaee;
+    padding: 50px 10px 0px;
+    color: #f6af22;
+
+}
+
+#login-form div {
+    padding: 10px 40px;
+}
+
+#login-form button {
+    margin: 20px 0px 0px 130px;
+    padding: 6px;
+    border-radius: 10px;
+    border: 1px solid #f6af22;
+    background-color: #fafafaee;
+}
+
+#login-form button:hover {
+    background-color:  #f6af22
 }
 
 #login-form input {
@@ -142,18 +182,102 @@ ul a {
     border-width: 0px 0px 2px;
     position: absolute; 
     width:200px;
+    height: 30px;
+} 
+
+#cpf input {
+    position: relative;
+    left: 12px
 }
 
+#password input {
+    position: relative;
+    left: 2px;
+}
+
+#login-questions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#login-questions p {
+    padding-top: 10px;
+}
+
+#login-questions p:hover {
+    cursor: pointer;
+}
+
+@media screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    #login-container{
+        width: 100vw;
+    }
+
+    #login-row{
+        width: 250vw;
+    }
+
+}
 /*********************************** PRODUCT ***********************************/
 #product-container {
     padding-top: 3.4rem;
 }
 
+hr{
+    color: black;
+    height: 2px;
+    background-color: black;
+}
+
+#parceiros{
+    margin: 20px 0px 30px 30px;
+    padding: 6px;
+    text-align: center;
+    font-size: larger
+}
+
 /*********************************** CAREER ***********************************/
 
 #career-row {
-    padding-top: 100px;
-    height: 340px
+    padding-top: 40px;
+    background-color:#ea9f30;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#career-row form {
+    padding-left: 50px;
+}
+
+#career-row input {
+    margin: 20px 0px 0px;
+    padding: 6px;
+    border-radius: 5px;
+}
+
+#email input {
+    position: relative;
+    left: 58px
+}
+
+#cv input {
+    position: relative;
+    left: 38px;
+}
+
+#btn-career {
+    position: relative;
+    left: 150px;
+}
+
+#btn-career input {
+    background-color: #fafafaee;
+}
+
+#btn-career input:hover {
+    cursor: pointer;
 }
 
 /*********************************** FOOTER ***********************************/
@@ -172,7 +296,7 @@ footer li {
 }
 
 footer {
-    background-color: #fafafa;
+    background-color: rgb(255, 239, 209);
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
@@ -208,3 +332,191 @@ footer h4:hover {
     font-size:10px;
     margin-top: 40px;
 }
+
+/*********************************** Responsividade General ***********************************/
+@media screen and (min-device-width : 320px) and (max-device-width : 480px) {
+
+    header{
+        width: 100%;
+    }
+
+    body{
+        width: 100%;
+        height: 100vh;
+    }
+    
+    div{
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    #product-bank{
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+        height: 20px;
+    }
+
+    #credit-card-row div{
+        display: none;
+    }
+
+     #product-description div{
+        display:none;
+    } 
+
+    #account-row{
+        display: none;
+    }
+
+    div .card-description{
+        width: 100%;
+    }
+
+    li{
+        width: 100%;
+
+    }
+
+    nav{
+        width: 100%;
+    }
+
+    .nav-login {
+        display: none;
+    }
+
+    .nav ul{
+        width: 100%;
+        overflow: hidden;
+    }
+
+    div .menu{
+        width: 100%;
+    }
+
+    .cashback{
+        display: none;
+    }
+
+    #discount-row{
+        display: none;
+    }
+
+    #ask-card-account div{
+        display: none;
+    }
+
+    hr{
+        display: none;
+    }
+
+    .home-first-container {
+        background-image: url(../images/mulher-de-casaco-amarelo-segurando-o-espaco-da-copia-do-cartao-de-credito.jpg);
+        background-position-x: initial;
+        background-position-y: initial;
+        background-size: cover;
+        background-attachment: initial;
+        background-origin: initial;
+        background-clip: initial;
+        background-color: initial;
+        width: 170%;
+        display: flex;
+        height: 35rem;
+        color: black;
+    }
+
+   .home-first-container{
+       margin-top: 55px;
+       width: 100%;
+       height: 200px;
+    }
+
+    .home-first-container p{
+        display: none;
+    }
+
+    #description-row {
+    width: 100vw;
+    font-size: 10px;
+    }
+    
+    #description-row div p{
+        width: 50vw;
+        font-size: 20px;
+        text-align: justify;
+    }
+
+    #ask-card-account{
+       display: none;
+    }
+
+    form{
+        display: none;
+    }
+
+    #product-bank h1, section h3{
+        margin-top: 40px;
+   }
+
+    h2{
+        width: 100%;
+    }
+
+    h3{
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .cashback p{
+        width: 100%;
+        display: flex;
+
+    }
+
+    form{
+        display: none;
+    }
+
+    .section-text{
+        width: 100%;
+        font-size: 10px;
+        margin: 0;
+    }
+
+    hr{
+        width: 100%;
+    }
+
+    #account-row{
+        width: 100%;
+    }
+
+    .section-text{
+        width: 100%;
+        font-size: 10px;
+        margin: 0;
+    }
+
+    #discount-row{
+        width: 100%;
+    }
+
+
+    body img {
+       display: none;
+    }
+
+    main{
+        width: 100%;
+        overflow: hidden;
+    }
+
+    footer{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 5px;
+        font-size: 14px;
+        width: 100%;
+    }
+}
+/**********************************************/
