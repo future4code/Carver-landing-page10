@@ -1,0 +1,612 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto';
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Inter';
+}
+
+/*********************************** HEADER ***********************************/
+header{
+    position: fixed;
+    top: 0;
+}
+
+nav {
+    background-color: #ff914d;
+    display: flex;
+    height: 55px;
+    align-items: center;
+    position: fixed;
+    width: 100%
+}
+
+.nav-brand img{
+    width: 19%;
+    margin-left: 1.5rem;
+}
+
+nav ul{
+    display: flex;
+}
+
+ul a {
+    text-decoration: none;
+    color: #FEFBF3;
+}
+
+nav ul li {
+    list-style-type: none;
+    color: #FEFBF3;
+    position: relative;
+    right: 22rem;
+}
+
+
+.nav-item {
+    padding-right: 2.5rem;
+}
+
+.nav-login {
+    position: relative;
+    left: 21rem
+}
+
+.nav-login img {
+    width: 10%;
+    padding-right: 0.2rem;
+}
+
+#menu, .menu {	display: none; }
+
+
+/* podes add esses por favor? */
+.negrito {
+    font-weight: bold;
+}
+
+#ask-card-account button:hover{
+    cursor: pointer;
+    background-color: #f6af22;
+}
+
+/* .botao{
+    
+} */
+
+
+#mobile-container {
+    display: none;
+}
+/*********************************** FAQ ***********************************/
+#faq-row {
+    background-color: #fafafa;
+}
+
+#faq-subtitle {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#faq,  #faq-subtitle {
+
+    text-align: center;
+    padding: 20px 0px;
+    cursor: default;
+}
+
+#faq {
+    padding-top: 80px;   
+}
+
+#faq-section li {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 60px;
+    box-shadow: 0px 2px 5px darkgrey;
+    padding: 20px;
+    background-color: #fb8b38;
+}
+
+#faq-section li p {
+    display: none;
+}
+
+#faq-section li:hover {
+    color: rgb(250, 250, 153);
+    cursor: pointer;
+    height: 130px;
+    box-shadow: 0px 2px 5px darkgrey;
+}
+
+#faq-section li:hover p {
+    display: block;
+    padding-top: 20px;
+    text-align: justify;
+    line-height: 1.5rem;
+}
+
+#faq-section p {
+    color: black;
+    font-size: 18px;
+}
+
+#faq-section {
+    width: 90%;
+    padding-left: 50px;
+}
+
+/*********************************** LOGIN ***********************************/
+#login-container header img{
+    width: 40%;
+}
+
+#login-container {
+    background-color: #ff914d;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+
+} 
+
+#login-row {
+     margin: 30px;
+     height: 350px; 
+     
+}
+#login-row h2 {
+    text-align:center;
+}
+
+ 
+#login-form {
+    width: 40%;
+    height: 300px;
+    border: 1px solid #fafafaee;
+    border-radius:15px;
+    background-color: #fafafaee;
+    padding: 50px 10px 0px;
+    color: #f6af22;
+
+}
+
+#login-form div {
+    padding: 10px 40px;
+}
+
+#login-form button {
+    margin: 20px 0px 0px 130px;
+    padding: 6px;
+    border-radius: 10px;
+    border: 1px solid #f6af22;
+    background-color: #fafafaee;
+}
+
+#login-form button:hover {
+    background-color:  #f6af22
+}
+
+#login-form input {
+    border-style: solid;
+    border-width: 0px 0px 2px;
+    position: absolute; 
+    width:200px;
+    height: 30px;
+} 
+
+#cpf input {
+    position: relative;
+    left: 12px
+}
+
+#password input {
+    position: relative;
+    left: 2px;
+}
+
+#login-questions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#login-questions p {
+    padding-top: 10px;
+}
+
+#login-questions p:hover {
+    cursor: pointer;
+}
+
+/*********************************** PRODUCT ***********************************/
+#product-container {
+    padding-top: 3.4rem;
+}
+
+hr{
+    color: black;
+    height: 2px;
+    background-color: black;
+}
+
+#parceiros{
+    margin: 20px 0px 30px 30px;
+    padding: 6px;
+    text-align: center;
+    font-size: larger
+}
+
+/*********************************** CAREER ***********************************/
+
+#career-row {
+    padding-top: 40px;
+    background-color:#ea9f30;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#career-row form {
+    padding-left: 50px;
+}
+
+#career-row input {
+    margin: 20px 0px 0px;
+    padding: 6px;
+    border-radius: 5px;
+}
+
+#email input {
+    position: relative;
+    left: 58px
+}
+
+#cv input {
+    position: relative;
+    left: 38px;
+}
+
+#btn-career {
+    position: relative;
+    left: 150px;
+}
+
+#btn-career input {
+    background-color: #fafafaee;
+}
+
+#btn-career input:hover {
+    cursor: pointer;
+}
+
+/*********************************** FOOTER ***********************************/
+footer img {
+    width: 9%
+}
+
+footer a {
+    text-decoration: none;
+    color: black
+}
+
+footer li {
+    list-style-type: none;
+    padding-top: 1rem;
+}
+
+footer {
+    background-color: rgb(255, 239, 209);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    justify-items: center;
+    padding: 2rem 0;
+    font-weight: 600;
+    column-gap: 20rem;
+}
+
+footer li:hover a, footer p:hover  {
+    color: #fb8b38;
+    cursor: pointer;
+}
+
+footer h4:hover {
+    color: #fb8b38;
+    cursor: default
+}
+
+.footer-contact p:nth-child(3) {
+    padding-top:1rem;
+}
+
+.footer-social-media a{
+    padding: 1rem;
+}
+
+.footer-social-media h4 {
+    padding-bottom: 1rem;
+}
+
+.referencia {
+    font-size:10px;
+    margin-top: 40px;
+}
+
+/*********************************** Responsividade General ***********************************/
+@media screen and (min-device-width : 320px) and (max-device-width : 480px) {
+
+    *{
+        margin: 0;
+        padding: 0;
+    }
+/* ---------- CABEÇALHO ----------------- */
+    header{
+        right: 0;
+        display: block;
+        width: 100vw;
+        padding: 5px 0;
+        border-width: 3px 0;
+        z-index: 2;
+        float: center;
+        height: 100vh;
+        left:0;
+    }
+
+    header nav {
+         top: 0;
+        left: 0;
+    }
+/* ----------- NAV -------------- */
+    nav{
+        left: 0;
+    } 
+
+    .nav-brand {
+        width: 20vw;
+    }
+
+    img.logo{
+        width: 70px;
+        height: 55px;
+        align-items: center;
+    }
+
+    .nav-brand img{
+        margin-left: 0px;
+    }
+
+    .nav-item {
+        display: flex;
+        padding-right: 0px;
+        padding-left: 1px;
+        margin-left: 40px;
+    }
+
+    nav ul{
+        display: flex;
+        align-items: center;
+    }
+    
+    nav ul li {
+        margin-left: 1rem;
+        right: 1rem;
+        top: 0.5rem;
+        width: 20%;
+    }
+
+/* ------------ CONTAINER --------------- */
+    #desktop-container {
+        display: none;
+    }
+
+    #mobile-container {
+        display: flex;
+        flex-direction: column;
+    }
+     #first-container {
+        padding-top: 60px;
+        background-image: url(../images/mulher-de-casaco-amarelo-segurando-o-espaco-da-copia-do-cartao-de-credito.jpg);
+        background-position: center;
+        background-size: cover;
+        min-width: 375px;
+        display: flex;
+        height: 38rem;
+     }
+
+     #first-container h1{
+         padding-top: 200px;
+         padding-left: 2rem;
+         font-size: 36px;
+         width: 98%;
+         color: #fff;
+     }
+     
+     #first-container h1 span {
+        font-size: 52px;
+        padding-top: 20px;
+     }
+
+/* ----------- QUEM SOMOS ---------------- */
+     
+     #about-bank {
+         width: 270px;
+         text-align: justify;
+         padding: 15% 15% 0%;
+     }
+
+     #about-bank  h1 {
+         text-align: center
+     }
+     
+     #bank-description {
+         padding-left: 5%;
+         display: flex;
+         flex-direction: column;
+         margin:50px 0px 50px 10px;
+     }
+
+     #bank-description h1{
+        font-size: 26px;
+
+     }
+
+     #bank-description img  {
+         width: 80%
+     }
+
+     #bank-description p {
+         text-align: justify;
+         width: 92%
+     }
+
+/* ----------- PRODUTOS ---------------------- */
+     #product {
+        background-image: url("https://image.freepik.com/fotos-gratis/retrato-de-uma-alegre-garota-loira-em-uma-camiseta-laranja_176420-33359.jpg");
+        background-position: center;
+        background-size: cover;
+        min-width: 375px;
+        height: 250px;
+        
+     }
+
+     #product h1{ 
+        color: #fb8b38;
+        padding: 100px 0px 0px 30px
+     }
+
+     #card img{
+         padding-top: 40px;
+         width: 90%;
+     }
+
+     #card h2{
+         width: 90%;
+         color: black;
+         padding: 0px 20px 40px;
+         text-align: center;
+     }
+
+     #about-bank-2 {
+         width: 70$;
+         padding: 0px 0px 40px 20px;
+     }
+
+     #about-bank-2 h3 {
+         padding-left: 20px;
+         padding-bottom: 10px;
+         font-size: 1.5rem
+     }
+
+     #account p {
+        width: 90%;
+        color: black;
+        padding: 20px 20px 0px;
+         font-size: 22px
+     }
+
+     #account img {
+         width: 99%;
+     }
+     
+     #discount {
+         padding: 30px 0px 0px 30px;
+         width: 80%;
+         text-align: center;
+         font-size: 26px
+     }
+
+     
+     button {
+         padding: 5px;
+         border-radius: 10px;
+         margin-top: 10px;
+         background-color: #fff;
+         border: 1px solid #fb8b38;
+         color:  #fb8b38;
+
+     }
+/* ------------ ELEMENTOS TEXTO -------------- */
+    /* body{
+        width: 100%;
+        height: 100%;
+    }
+    
+    div{
+        min-width: 375px;
+        height: 100%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+
+    li{
+        width: 100%;
+
+    }
+
+    nav{
+        width: 100%;
+    }
+
+
+    .nav ul{
+        width: 100%;
+        overflow: hidden;
+    }
+
+    div .menu{
+        width: 100%;
+    }
+
+
+    h1{
+        color: black;
+   }
+
+    h2{
+        width: 100%;
+    }
+
+    h3{
+        width: 100%;
+        overflow: hidden;
+    }
+
+
+    hr{
+        width: 100%;
+    } */
+
+
+/* --------------- FAQ --------------- */
+
+    #faq-subtitle img{
+        display: none;
+    }
+    
+    #faq-section li{
+        width: 300px;
+        padding: 10px;
+    }
+
+/* ------------- RODAPE ------------- */
+    
+    footer{
+        display: grid;
+        grid-template-columns: 1fr;
+        column-gap: 5px;
+        font-size: 12px;
+        width: 100vw;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    footer img {
+        width: 5%
+    }
+}
+/**********************************************

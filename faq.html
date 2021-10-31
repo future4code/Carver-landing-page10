@@ -5,37 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/faq-login-product.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100&family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <title>FAQ | F4Bank</title>
 </head>
 
 <body>
-    <header>
-        <nav>
-        <div class="nav-brand">
-            <a href="index.html"> <img class="logo" src="images/f4bank-2.png" alt="Logo" target="_blank"> </a>
-        </div>
-        <div class="menu">
-            <ul>
-               <li>
-                   <a class="nav-item" href="#description-row">Quem Somos</a>
-                </li> 
-                <li>
-                <!-- tá cortando a "cabeça" do nome "produtos", provavelmente precisa colocar uma margem -->
-                   <a class="nav-item" href="#product-bank">Produtos</a>
-                   
-                </li> 
-                <li>
-                   <a class="nav-item" href="faq.html">FAQ</a>
-                </li> 
-                <!-- LOGIN -->
-               <li class="nav-login">
-                    <img src="https://image.flaticon.com/icons/png/128/1243/1243949.png" alt="login">
-                   <a href="login.html" target="_blank">Login</a>
-                </li> 
-            </ul>
-        </div>
-        </nav>
-    </header>
+    <header class="header">
+        <a href="index.html" class="logo"><img src="images/f4bank-2.png" alt=""></a>
+        <input class="menu-btn" type="checkbox" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+        <ul class="menu">
+          <li><a href="index.html">Quem Somos</a></li>
+          <li><a href="index.html">Produtos</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li class="nav-login">
+            <img src="https://image.flaticon.com/icons/png/128/1243/1243949.png" alt="login">
+           <a href="login.html" target="_blank">Login</a>
+        </li>
+        </ul>
+      </header>
     <main id="faq-row">
         <h1 id="faq">FAQ: Dúvidas Frequentes</h1>
         <div id="faq-subtitle"> 
