@@ -1,124 +1,114 @@
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
-/*********************************** HEADER ***********************************/
-
-nav {
-    background-color: #ff914d;
-    display: flex;
-    height: 55px;
-    align-items: center;
-    position: fixed;
-    width: 100%
+h1, h2, h3, li {
+  font-family: "Inter";
+  font-weight: bold;
 }
 
-.nav-brand img{
-    width: 19%;
-    margin-left: 1.5rem;
+p {
+  font-family: "Roboto";
+  font-weight: 800;
 }
 
-nav ul{
-    display: flex;
+/********************** Header **********************/
+.header {
+  background-color: #ff914d;
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  height: 60px;
 }
 
-ul a {
-    text-decoration: none;
-    color: #FEFBF3;
+.header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  background-color: #ff914d;
+  position: relative;
+  right: 420px;
 }
 
-.menu li {
-    list-style-type: none;
-    color: #FEFBF3;
-    position: relative;
-    right: 22rem;
+.header li a {
+  display: block;
+  padding: 20px 20px;
+  text-decoration: none;
+  color: #fefbf3;
 }
 
-
-.nav-item {
-    padding-right: 2.5rem;
+.header .logo {
+  display: flex;
+  padding: 10px 20px;
 }
 
-.nav-login {
-    position: relative;
-    left: 21rem
-}
-
-.nav-login img {
-    width: 10%;
-    padding-right: 0.2rem;
-}
 
 /* podes add esses por favor? */
 .negrito {
     font-weight: bold;
+
+}
+.header li {
+  float: left;
+
 }
 
-#ask-card-account button:hover{
-    cursor: pointer;
-    background-color: #f6af22;
+.header li a {
+  padding: 20px 30px;
 }
 
-/* .botao{
-    
-} */
-
-/*********************************** FAQ ***********************************/
-#faq-row {
-    background-color: #fafafa;
+.header .menu-icon,
+input {
+  display: none;
 }
 
-#faq-subtitle {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+.logo img {
+  width: 15%;
 }
 
-#faq,  #faq-subtitle {
-
-    text-align: center;
-    padding: 20px 0px;
-    cursor: default;
+.nav-login {
+  display: flex;
 }
 
-#faq {
-    padding-top: 80px;   
+.nav-login img {
+  width: 20%;
+  height: 20px;
+  margin-top: 20px;
+  position: relative;
+  left: 20px;
 }
 
-#faq-section li {
-    list-style-type: none;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 60px;
-    box-shadow: 0px 2px 5px darkgrey;
-    padding: 20px;
-    background-color: #fb8b38;
+/********************** Footer **********************/
+
+footer img {
+  width: 9%;
 }
 
-#faq-section li p {
-    display: none;
+footer a {
+  text-decoration: none;
+  color: black;
 }
 
-#faq-section li:hover {
-    color: rgb(250, 250, 153);
-    cursor: pointer;
-    height: 130px;
-    box-shadow: 0px 2px 5px darkgrey;
+footer li {
+  list-style-type: none;
+  padding-top: 1rem;
 }
 
-#faq-section li:hover p {
-    display: block;
-    padding-top: 20px;
-    text-align: justify;
-    line-height: 1.5rem;
+footer {
+  background-color: rgb(255, 239, 209);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  justify-items: center;
+  padding: 2rem 0;
+  font-weight: 600;
+  column-gap: 10rem;
 }
 
-#faq-section p {
-    color: black;
-    font-size: 18px;
-}
 
 #faq-section {
     width: 90%;
@@ -126,121 +116,78 @@ ul a {
     margin-bottom: 50px;
 }
 
-/*********************************** LOGIN ***********************************/
-header img{
-    width: 40%;
+footer li:hover a, footer p:hover {
+  color: #fb8b38;
+  cursor: pointer;
 }
 
-#login-container {
-    background-color: #ff914d;
+footer h4:hover {
+  color: #fb8b38;
+  cursor: default;
+}
+
+.footer-contact p:nth-child(3) {
+  padding-top: 1rem;
+}
+
+.footer-social-media a {
+  padding: 1rem;
+}
+
+.footer-social-media h4 {
+  padding-bottom: 1rem;
+}
+
+.referencia {
+  font-size: 10px;
+  margin-top: 40px;
+}
+
+/********************* MEDIA QUERY *******************/
+@media screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  /**************** HEADER ********************/
+  body {
+    min-width: 375px;
+  }
+
+  .header {
+    min-height: 60px;
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 3.5fr 1fr;
+    align-items: start;
+    min-width: 375px;
+  }
 
-} 
+  .logo img {
+    width: 20%;
+    margin-top: 0;
+  }
 
-#login-row {
-     margin: 30px;
-     height: 350px; 
-     
-}
-#login-row h2 {
-    text-align:center;
-}
-
- 
-#login-form {
-    width: 40%;
-    height: 300px;
-    border: 1px solid #fafafaee;
-    border-radius:15px;
-    background-color: #fafafaee;
-    padding: 50px 10px 0px;
-    color: #f6af22;
-
-}
-
-#login-form div {
-    padding: 10px 40px;
-}
-
-#login-form button {
-    margin: 20px 0px 0px 130px;
-    padding: 6px;
-    border-radius: 10px;
-    border: 1px solid #f6af22;
-    background-color: #fafafaee;
-}
-
-#login-form button:hover {
-    background-color:  #f6af22
-}
-
-#login-form input {
-    border-style: solid;
-    border-width: 0px 0px 2px;
-    position: absolute; 
-    width:200px;
-    height: 30px;
-} 
-
-#cpf input {
+  .header ul {
     position: relative;
-    left: 12px
-}
-
-#password input {
-    position: relative;
-    left: 2px;
-}
-
-#login-questions {
+    right: 0px;
+    left: 82px;
+    top: -20px;
     display: flex;
     flex-direction: column;
-    align-items: center;
-}
+  }
 
-#login-questions p {
-    padding-top: 10px;
-}
+  .nav-login img {
+    width: 10%;
+    height: 20px;
+    margin-top: 15px;
+  }
 
-#login-questions p:hover {
+  .header .menu {
+    clear: both;
+    max-height: 0;
+    transition: max-height 0.2s ease-out;
+  }
+
+  .header .menu-icon {
     cursor: pointer;
-}
-
-@media screen and (min-device-width : 320px) and (max-device-width : 480px) {
-    #login-container{
-        width: 100vw;
-    }
-
-    #login-row{
-        width: 250vw;
-    }
-
-}
-/*********************************** PRODUCT ***********************************/
-#product-container {
-    padding-top: 3.4rem;
-}
-
-hr{
-    color: black;
-    height: 2px;
-    background-color: black;
-}
-
-#parceiros{
-    margin: 20px 0px 30px 30px;
-    padding: 6px;
-    text-align: center;
-    font-size: larger
-}
-
-/*********************************** CAREER ***********************************/
-
-#career-row {
-    padding-top: 40px;
-    background-color:#ea9f30;
     display: flex;
+
     justify-content: center;
     align-items: center;
     height: 100vh;
@@ -257,42 +204,44 @@ hr{
 }
 
 #email input {
+
+    padding: 28px 20px;
+
     position: relative;
-    left: 58px
-}
+    user-select: none;
+  }
 
-#cv input {
+  .header .menu-icon .navicon {
+    background: #333;
+    display: block;
+    height: 2px;
     position: relative;
-    left: 38px;
-}
+    transition: background 0.2s ease-out;
+    width: 18px;
+  }
 
-#btn-career {
-    position: relative;
-    left: 150px;
-}
+  .header .menu-icon .navicon:before, .header .menu-icon .navicon:after {
+    background: #333;
+    content: "";
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all 0.2s ease-out;
+    width: 100%;
+  }
 
-#btn-career input {
-    background-color: #fafafaee;
-}
+  .header .menu-icon .navicon:before {
+    top: 5px;
+  }
 
-#btn-career input:hover {
-    cursor: pointer;
-}
+  .header .menu-icon .navicon:after {
+    top: -5px;
+  }
 
-/*********************************** FOOTER ***********************************/
-footer img {
-    width: 9%
-}
+  .header .menu-btn {
+    display: none;
+  }
 
-footer a {
-    text-decoration: none;
-    color: black
-}
-
-footer li {
-    list-style-type: none;
-    padding-top: 1rem;
-}
 
 footer {
     background-color: rgb(255, 239, 209);
@@ -307,217 +256,39 @@ footer {
     position: relative;
 }
 
-footer li:hover a, footer p:hover  {
-    color: #fb8b38;
-    cursor: pointer;
-}
+  .header .menu-btn:checked ~ .menu {
+    max-height: 240px;
+  }
 
-footer h4:hover {
-    color: #fb8b38;
-    cursor: default
-}
+  .header .menu-btn:checked ~ .menu-icon .navicon {
+    background: transparent;
+  }
 
-.footer-contact p:nth-child(3) {
-    padding-top:1rem;
-}
+  .header .menu-btn:checked ~ .menu-icon .navicon:before {
+    transform: rotate(-45deg);
+  }
 
-.footer-social-media a{
-    padding: 1rem;
-}
+  .header .menu-btn:checked ~ .menu-icon .navicon:after {
+    transform: rotate(45deg);
+  }
 
-.footer-social-media h4 {
-    padding-bottom: 1rem;
-}
+  .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before, .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+    top: 0;
+  }
 
-.referencia {
-    font-size:10px;
-    margin-top: 40px;
-}
+  /**************************** Footer *******************/
 
-/*********************************** Responsividade General ***********************************/
-@media screen and (min-device-width : 320px) and (max-device-width : 480px) {
-
-    header{
-        width: 100%;
-    }
-
-    body{
-        width: 100%;
-        height: 100vh;
-    }
-    
-    div{
-        width: 100%;
-        margin-top: 10px;
-    }
-
-    #product-bank{
-        border-top: 1px solid black;
-        border-bottom: 1px solid black;
-        height: 20px;
-    }
-
-    #credit-card-row div{
-        display: none;
-    }
-
-     #product-description div{
-        display:none;
-    } 
-
-    #account-row{
-        display: none;
-    }
-
-    div .card-description{
-        width: 100%;
-    }
-
-    li{
-        width: 100%;
-
-    }
-
-    nav{
-        width: 100%;
-    }
-
-    .nav-login {
-        display: none;
-    }
-
-    .nav ul{
-        width: 100%;
-        overflow: hidden;
-    }
-
-    div .menu{
-        width: 100%;
-    }
-
-    .cashback{
-        display: none;
-    }
-
-    #discount-row{
-        display: none;
-    }
-
-    #ask-card-account div{
-        display: none;
-    }
-
-    hr{
-        display: none;
-    }
-
-    .home-first-container {
-        background-image: url(../images/mulher-de-casaco-amarelo-segurando-o-espaco-da-copia-do-cartao-de-credito.jpg);
-        background-position-x: initial;
-        background-position-y: initial;
-        background-size: cover;
-        background-attachment: initial;
-        background-origin: initial;
-        background-clip: initial;
-        background-color: initial;
-        width: 170%;
-        display: flex;
-        height: 35rem;
-        color: black;
-    }
-
-   .home-first-container{
-       margin-top: 55px;
-       width: 100%;
-       height: 200px;
-    }
-
-    .home-first-container p{
-        display: none;
-    }
-
-    #description-row {
+  footer {
+    display: grid;
+    grid-template-columns: 1fr;
+    column-gap: 5px;
+    font-size: 12px;
     width: 100vw;
-    font-size: 10px;
-    }
-    
-    #description-row div p{
-        width: 50vw;
-        font-size: 20px;
-        text-align: justify;
-    }
+    text-align: center;
+    margin-top: 20px;
+  }
 
-    #ask-card-account{
-       display: none;
-    }
-
-    form{
-        display: none;
-    }
-
-    #product-bank h1, section h3{
-        margin-top: 40px;
-   }
-
-    h2{
-        width: 100%;
-    }
-
-    h3{
-        width: 100%;
-        overflow: hidden;
-    }
-
-    .cashback p{
-        width: 100%;
-        display: flex;
-
-    }
-
-    form{
-        display: none;
-    }
-
-    .section-text{
-        width: 100%;
-        font-size: 10px;
-        margin: 0;
-    }
-
-    hr{
-        width: 100%;
-    }
-
-    #account-row{
-        width: 100%;
-    }
-
-    .section-text{
-        width: 100%;
-        font-size: 10px;
-        margin: 0;
-    }
-
-    #discount-row{
-        width: 100%;
-    }
-
-
-    body img {
-       display: none;
-    }
-
-    main{
-        width: 100%;
-        overflow: hidden;
-    }
-
-    footer{
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        column-gap: 5px;
-        font-size: 14px;
-        width: 100%;
-    }
+  footer img {
+    width: 5%;
+  }
 }
-/**********************************************/
