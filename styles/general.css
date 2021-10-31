@@ -119,6 +119,7 @@ footer {
 footer li:hover a, footer p:hover {
   color: #fb8b38;
   cursor: pointer;
+
 }
 
 footer h4:hover {
@@ -239,6 +240,10 @@ footer h4:hover {
   }
 
   .header .menu-btn {
+    display: none;
+  }
+
+  #faq-subtitle img {
     display: none;
   }
 
