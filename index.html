@@ -6,221 +6,183 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/general.css">
     <link rel="stylesheet" href="styles/index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100&family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <title>F4Bank</title>
 </head>
-
-
 <body>
-    <header>
-        <nav>
-        <div class="nav-brand">
-            <a href="index.html"> <img class="logo" src="images/f4bank-2.png" alt="Logo" target="_blank"> </a>
-        </div>
-        <div class="menu">
-            <ul>
-               <li>
-                    <a class="nav-item" href="index.html#description-row">Quem Somos</a>
-                </li> 
-                <li>
-                <!-- tá cortando a "cabeça" do nome "produtos", provavelmente precisa colocar uma margem -->
-                   <a class="nav-item" href="#product-bank">Produtos</a>
-                   
-                </li> 
-                <li>
-                   <a class="nav-item" href="faq.html">FAQ</a>
-                </li> 
-                <!-- LOGIN -->
-               <li class="nav-login">
-                    <img src="https://image.flaticon.com/icons/png/128/1243/1243949.png" alt="login">
-                   <a href="login.html" target="_blank">Login</a>
-                </li> 
+    <div id="index-container">
+        <header class="header">
+            <a href="index.html" class="logo"><img src="images/f4bank-2.png" alt=""></a>
+            <input class="menu-btn" type="checkbox" id="menu-btn" />
+            <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+            <ul class="menu">
+              <li><a href="#description-row">Quem Somos</a></li>
+              <li><a href="#product-bank">Produtos</a></li>
+              <li><a href="faq.html">FAQ</a></li>
+              <li class="nav-login">
+                <img src="https://image.flaticon.com/icons/png/128/1243/1243949.png" alt="login">
+               <a href="login.html" target="_blank">Login</a>
+            </li>
             </ul>
-        </div>
-        </nav>
-    </header>
-
-    <main>
-        <div class="home-first-container">
-            <!-- https://image.freepik.com/free-psd/woman-with-black-friday-concept-with-credit-card_23-2148710574.jpg -->
-            <div>
-                <h1>Simples, prático e inovador: a revolução começa com o F4Bank</h1>
-                <p>Faça como outros 50 milhões de brasileiros e veja como é fácil ter o controle de suas finanças em suas mãos aliada a segurança de um banco de 120 anos.</p>
-                
-            </div>
-            <img src="images/mulher-de-casaco-amarelo-segurando-o-espaco-da-copia-do-cartao-de-credito.jpg">
-        </div>
-
-
-<!-- DESCIÇÃO QUEM SOMOS -->
-        <div id="description-row">
-            <h1 id="description-bank">Quem somos?</h1>
-            <div>
-                <p>O F4Bank é um banco público brasileiro sem complicações. Com atendimento online pelo site ou aplicativo, onde os clientes podem consultar e resolver grande maioria das demandas.</p>
-            </div>
-        </div>
-
-        <div id=credit-card-row>
-            <div id="credit-card-description">
-                <h1>A traquilidade em suas mãos</h1>
-                <p>Com o nosso cartão, nossos clientes podem ter a tranquidade de não pagar taxas e com a "Conta corrente digital", reforçando a segurança de um banco tradicional com décadas de história no país, somado com  a tecnologia.</p>
-            </div>
-            
-            <img src="https://image.freepik.com/fotos-gratis/homem-com-excesso-de-peso-de-oculos-vestindo-uma-camiseta-preta-segurando-um-smartphone-e-mostrando-um-cartao-de-credito-parecendo-confiante-sobre-a-laranja_141793-58710.jpg" alt="rapaz com cartão" >
-        </div>
-
-
- <!--    PRODUTOS  -->
-    <section>
-        <div id="product-bank">
-            <h1 >Produtos</h1>
-            <img src="https://image.freepik.com/fotos-gratis/retrato-de-uma-alegre-garota-loira-em-uma-camiseta-laranja_176420-33359.jpg" alt="moça com cartão">
-
-        </div>
-        
-        
-        <hr>
-        <div id="product-description">
-            
-            <div class="card-description">
-                    <div id="section-title">
-                        <img src="https://image.freepik.com/fotos-gratis/mulher-jovem-e-animada-segurando-um-cartao-de-credito-isolado-na-parede-laranja_141793-66067.jpg" alt="moça de camisa vermelha com cartão">
-                    </div>
-                
-                    <div class="section-text">
-                        
-                        <h3>CARTÃO DE CRÉDITO SEM ANUIDADE</h3>
-                        <p>O Cartão F4Bank é o melhor cartão de crédito sem anuidade. Ao comprar em lojas online parceiras, o programa “Precinho” concede descontos nas transações, variando de acordo com o local escolhido.</p>
-                        <!-- <a href="cartao.html">Saiba mais</a> -->
-                    </div>
-                </div>
+          </header>
+          <main>
+            <div class="top-container">
+                <div>
+                    <h1>Simples, prático e inovador: a revolução começa com o F4Bank</h1>
+                    <p>Faça como outros 50 milhões de brasileiros e veja como é fácil ter o controle de suas finanças em suas mãos aliada a segurança de um banco de 120 anos.</p>
                     
+                </div>
+                <img src="images/mulher-de-casaco-amarelo-segurando-o-espaco-da-copia-do-cartao-de-credito.jpg">
+            </div>
+
+            <div id="description-row">
+                <h1>Quem somos?</h1>
+                <div>
+                    <p>O F4Bank é um banco público brasileiro sem complicações. Com atendimento online pelo site ou aplicativo, onde os clientes podem consultar e resolver grande maioria das demandas.</p>
+                </div>
+            </div>
+
+            <div id=credit-card-row>
+                <img src="images/f4bank-bank-home-1-.png" alt="rapaz com cartão" >
+                <div id="credit-card-description">
+                    <h1>A traquilidade em suas mãos</h1>
+                </div> 
+            </div>
+
+            <section>
+                <div id="product-bank">
+                    <h1 >Produtos</h1>
+                    <img src="https://image.freepik.com/fotos-gratis/retrato-de-uma-alegre-garota-loira-em-uma-camiseta-laranja_176420-33359.jpg" alt="moça com cartão">
+                </div>
+
+                <div id="product-description">
+                    <div class="card-description">
+                            <div id="section-title">
+                                <img src="images/cartao-f4-1280x720.png">
+                            </div>
+      
+                            <div class="section-text">
+                                <h3 class="desktop">CARTÃO DE CRÉDITO SEM ANUIDADE</h3>
+                                <h2 class="mobile">O Cartão F4Bank é o melhor cartão de crédito sem anuidade.</h2>
+                                <p>O Cartão F4Bank é o melhor cartão de crédito sem anuidade. Ao comprar em lojas online parceiras, o programa “Precinho” concede descontos nas transações, variando de acordo com o local escolhido.</p>
+                                <a href="product.html">Saiba mais</a>
+                            </div>
+                            
+                    </div>
+                    <div class="cashback">
+                        <h3>O poder em ter o F4Card</h3>
+                    
+                        <p>Ele fica em primeiro lugar da lista por ser uma das opções mais equilibradas e úteis no quesito descontos e benefícios, pois nosso programa de cashback e a possibilidade de acumular pontos são inestimáveis benefícios para o dia a dia!</p>
+                        <a  href="product.html">Saiba mais</a>
+                    </div>
+        
+                    <div id="account-row">
+                        <div class="account-container">     
+                            <div class="section-text">
+                                <h3>CONTA CORRENTE DIGITAL</h3>
+
+                                <p class="mobile">Todo valor transferido ou depositado na sua F4 rende 100% do CDI.</p>
+
+                                <p class="desktop">
+                                    Conta digital que faz seu dinheiro valer mais a cada dia?
+                                    Aqui tem também! Todo valor transferido ou depositado na sua F4 rende 100% do CDI. 
+                                </p>    
+                                <p class="negrito">Ou seja, mais do que a poupança!</p> 
+                                <p class="desktop">
+                                    E você não precisa fazer nada: o rendimento é automático, seguro e sem burocracia.
+                                </p>
+                                <a class="desktop">Saiba mais</a>
+                            </div>
+                            
+                            <img src="images/investimento.png" alt="homem com cartão">  
+                        </div>
+                        <a class="mobile">Saiba mais</a>
+                    </div> 
+                             
+                        <div id="contactless">
+                            <h3>ENTENDEMOS O PRAZER DAS PEQUENAS COMPRAS</h3>
+                             <p>
+                                  O cartão F4Bank tem a tecnologia de pagamento por aproximação para fazer esses momentos mais especiais: menos burocracia no pagamento, mais tempo com sua "brusinha" nova!
+                             </p>
+                             <a>Saiba mais</a>
+                         </div>
+
+                     
+                    <div id="discount-row">
                         
-                    <!-- <img src="https://image.freepik.com/fotos-gratis/mulher-jovem-e-animada-segurando-um-cartao-de-credito-isolado-na-parede-laranja_141793-66067.jpg" alt=""> -->
-            </div>
-            <hr> 
-
-            <div class="cashback">
-
-                <h3>O PODER EM TER O F4CARD</h3>
+                        <div class="account-container">
+                            <div class="section-text">
+                                <h3>DESCONTO NAS PARCELAS PAGAS ANTECIPADAMENTE</h3>
+                                <p>
+                                    Valorizamos quem também valoriza as contas em dia, e para tornar as coisas mais interessantes, todas as contas pagas com antecipação têm um desconto mais do que especial!
+                                </p>
+                                <a href="product.html">Saiba mais</a>
+                            </div>
+                            <img src="https://image.freepik.com/fotos-gratis/homem-jovem-e-careca-sorridente-segurando-um-cartao-de-credito-e-dinheiro-e-olhando-para-o-cartao-isolado-na-parede-laranja_141793-94369.jpg">
                 
-                <p>Ele fica em primeiro lugar da lista por ser uma das opções mais equilibradas e úteis no quesito descontos e benefícios, pois nosso programa de cashback e a possibilidade de acumular pontos são inestimáveis benefícios para o dia a dia, o Programa Precinho!</p>
-                <a  href="cartao.html">Saiba mais</a>
-            </div>
-
-            <hr> 
-            <div id="account-row">
-                <div class="account-container">     
-                    <div class="section-text">
-                        <h3>CONTA CORRENTE DIGITAL</h3>
-                        <p>
-                            Conta digital que faz seu dinheiro valer mais a cada dia?
-                            Aqui tem também! Todo valor transferido ou depositado na sua F4 rende 100% do CDI. 
-                        </p>    
-                        <p class="negrito">Ou seja, mais do que a poupança!</p> 
-                        <p>
-                            E você não precisa fazer nada: o rendimento é automático, seguro e sem burocracia.
-                        </p>
-                        <!-- <a href="cartao.html">Saiba mais</a> -->
+                        </div>
                     </div>
                     
-                    <img src="https://image.freepik.com/fotos-gratis/homem-de-meia-idade-alegre-e-positivo-vestindo-uma-camisa-azul-listrada-segurando-um-telefone-celular-e-mostrando-o-cartao-de-credito-em-pe_141793-22165.jpg" alt="homem com cartão">  
-                </div>
-            </div> 
-            <hr> 
+                <div class="cashback">
+                    <h3 class="desktop">MODELO INTERNACIONAL</h3>
+                    <div id="international-card-description">
+                            <P>Para férias, a trabalho ou compras na internet!</p>
+                            <p>Ative ou desative a função quando quiser pelo aplicativo!</p>
+                            <a>Saiba mais</a>
+                    </div> 
+            </div>  
+            </section> 
 
-            <div class="cashback">
-                <h3>ENTENDEMOS O PRAZER DAS PEQUENAS COMPRAS</h3>
-                <div id="contactless">
-                     <!-- <img src="https://image.freepik.com/fotos-gratis/moda-jovem-segurando-sacolas-de-compras-e-cartao-de-credito-pelo-buraco-de-papel-rasgado-na-parede_140725-105002.jpg"> -->
-          
-                     <p>
-                          O cartão F4Bank tem a tecnologia de pagamento por aproximação para fazer esses momentos mais especiais: menos burocracia no pagamento, mais tempo com sua "brusinha" nova!
-                     </p>
-                     <!-- <a href="cartao.html">Saiba mais</a> -->
-                 </div>
-            </div>
-            
-            <hr> 
-            <div id="discount-row">
-                
-                <div class="account-container">
-                    <div class="section-text">
-                        <h3>DESCONTO NAS PARCELAS PAGAS ANTECIPADAMENTE</h3>
-                        <p>
-                            Valorizamos quem também valoriza as contas em dia, e para tornar as coisas mais interessantes, todas as contas pagas com antecipação têm um desconto mais do que especial!
-                        </p>
-                        <a href="cartao.html">Saiba mais</a>
-                    </div>
-                    <img src="https://image.freepik.com/fotos-gratis/homem-jovem-e-careca-sorridente-segurando-um-cartao-de-credito-e-dinheiro-e-olhando-para-o-cartao-isolado-na-parede-laranja_141793-94369.jpg">
-        
+            <section id="ask-card-account">
+                <img src="images/mulher-cartao-branco-fundo-laranja-f4bank.jpg">
+                <div>
+                    <h2>Peça sua conta e cartão de crédito do F4Bank</h2>
+                    <form action="">
+                        <label for="cpf"></label>
+                        <input type="text" name="cpf" placeholder="Digite seu CPF (apenas números)" pattern=[0-9] required>
+                        <button>Continuar</button>
+                    </form>  
                 </div>
+            </section>
             </div>
-            <hr> 
-            
-        <div class="cashback">
-            <h3>MODELO INTERNACIONAL</h3>
-            <div id="international-card-description">
-                <!-- <img src="https://image.freepik.com/fotos-gratis/garota-jovem-viajante-sorridente-com-chapeu-segurando-mala-e-passagens-de-aviao-cartao-de-credito-na-parede-laranja-isolada_141793-79023.jpg" alt="menina com malas"> -->
-                    <P>Para férias, a trabalho ou compras na internet, estamos contigo.</p>
-                    <p>Ative ou desative a função quando quiser pelo aplicativo!</p>
-                    <a href="cartao.html">Saiba mais</a>
-            </div> 
-    </div>  
-    </section> 
-    
-    <section id="ask-card-account">
-        <img src="images/mulher-cartao-branco-fundo-laranja-f4bank.jpg">
-        <div>
-            <h2>Peça sua conta e cartão de crédito do F4Bank</h2>
-            <form action="">
-                <label for="cpf"></label>
-                <input type="text" name="cpf" placeholder="Digite seu CPF (apenas números)" pattern=[0-9] required>
-                <button>Continuar</button>
-            </form>  
-        </div>
-    </section>
-    </main>
-    
+          </main>
 
- <!-- RODAPÉ -->
+          <!-- RODAPÉ -->
     <footer>
-
-        <div class="footer-links">
-            <li>
-                <a class = "botao" href="index.html">INÍCIO</a>
-            </li>
-            <li>
-                <a class = "botao" href="trabalhe-conosco.html">TRABALHE CONOSCO</a>
-            </li>
-            <li>
-                <a class = "botao" href="faq.html">FAQ</a>
-            </li>
-        </div>
+        <!-- colocar os botões com a mãozinha -->
+                <div class="footer-links">
+                    <li>
+                        <a class = "botao" href="index.html">INÍCIO</a>
+                    </li>
+                    <li>
+                        <a class = "botao" href="">TRABALHE CONOSCO</a>
+                    </li>
+                    <li>
+                        <a class = "botao" href="faq.html">FAQ</a>
+                    </li>
+                </div>
+                    
+        
+            <!-- CONTATO -->
+                <div class="footer-contact">
+                    <h4>Contato:</h4>
+                    <p> email-de-contato@f4bank.com.br</p>
+                    <p> Chat online
+                        <img class = "botao" src="https://image.flaticon.com/icons/png/512/1156/1156472.png" alt="balão de chat">
+                    </p>
+                </div>
+                    <div class="footer-social-media">
+                        <h4>Nos siga nas redes sociais</h4>
+                        <a href="https://www.instagram.com/"> <img class="botao-redes-sociais" src="https://image.flaticon.com/icons/png/128/1216/1216878.png" alt="Instagram" target="_blank"> </a>
+                        <a href="https://facebook.com/"> <img class="botao-redes-sociais" src="https://image.flaticon.com/icons/png/512/1051/1051309.png" alt="Facebook" target="_blank"> </a>
+                        <a href="https://twitter.com/"> <img class="botao-redes-sociais" src="https://image.flaticon.com/icons/png/128/1216/1216864.png" alt="Twitter" target="_blank"> </a>
+                    </div>
             
-
-    <!-- CONTATO -->
-        <div class="footer-contact">
-            <h4>Contato:</h4>
-            <p> email-de-contato@f4bank.com.br</p>
-            <p> Chat online
-                <img class = "botao" src="https://image.flaticon.com/icons/png/512/1156/1156472.png" alt="balão de chat">
-            </p>
-        </div>
-            <div class="footer-social-media">
-                <h4>Nos siga nas redes sociais</h4>
-                <a href="https://www.instagram.com/"> <img class="botao-redes-sociais" src="https://image.flaticon.com/icons/png/128/1216/1216878.png" alt="Instagram" target="_blank"> </a>
-                <a href="https://facebook.com/"> <img class="botao-redes-sociais" src="https://image.flaticon.com/icons/png/512/1051/1051309.png" alt="Facebook" target="_blank"> </a>
-                <a href="https://twitter.com/"> <img class="botao-redes-sociais" src="https://image.flaticon.com/icons/png/128/1216/1216864.png" alt="Twitter" target="_blank"> </a>
-            </div>
-    
-
-            
-            
-            <br><br>
-            <div class="referencia">
-                <a href="https://br.freepik.com">Fotos e ícones - br.freepik.com</a>
-            </div>
-            
-    </footer>
+                    <div class="referencia">
+                        <a href="https://br.freepik.com">Fotos e ícones - br.freepik.com</a>
+                    </div> 
+            </footer>
+    </div>
 </body>
 </html>
