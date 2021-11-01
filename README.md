@@ -13,12 +13,14 @@ Tabela de conteúdos
         * Os botões para navegar entre as páginas funcionam
         * Adicionamos função de login
         * O site é bem clean e fácil de usar
-        * 
+        * Atenção: alguns botões de "saiba mais" realmente não levam a lugar algum propositalmente
+        
    * O que não funciona?
         * Tivemos dificuldade com a responsividade
         * Tentamos ficar dentro da proposta de usar apenas o css
         * O site mobile não apresenta a interface desejada pelo grupo
         * Alguns botões de navegação não funcionam no mobile
+        * No "trabalhe conosco" o formulário não está respondendo corretamente, quando arrumamos o cabeçalho, ele some
 <!--te-->
 
 <h4 align="center"> 

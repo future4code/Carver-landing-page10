@@ -397,6 +397,7 @@ main a:hover {
   #ask-card-account div h2 {
     padding-left: 10px;
     margin-bottom: 30px;
+    text-align: center;
   }
 
   #ask-card-account div button {
