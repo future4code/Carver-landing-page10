@@ -46,8 +46,15 @@ p {
   padding: 10px 20px;
 }
 
+
+/* podes add esses por favor? */
+.negrito {
+    font-weight: bold;
+
+}
 .header li {
   float: left;
+
 }
 
 .header li a {
@@ -102,9 +109,17 @@ footer {
   column-gap: 10rem;
 }
 
+
+#faq-section {
+    width: 90%;
+    padding-left: 50px;
+    margin-bottom: 50px;
+}
+
 footer li:hover a, footer p:hover {
   color: #fb8b38;
   cursor: pointer;
+
 }
 
 footer h4:hover {
@@ -173,7 +188,26 @@ footer h4:hover {
   .header .menu-icon {
     cursor: pointer;
     display: flex;
+
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#career-row form {
+    padding-left: 50px;
+}
+
+#career-row input {
+    margin: 20px 0px 0px;
+    padding: 6px;
+    border-radius: 5px;
+}
+
+#email input {
+
     padding: 28px 20px;
+
     position: relative;
     user-select: none;
   }
@@ -208,6 +242,24 @@ footer h4:hover {
   .header .menu-btn {
     display: none;
   }
+
+  #faq-subtitle img {
+    display: none;
+  }
+
+
+footer {
+    background-color: rgb(255, 239, 209);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    justify-items: center;
+    padding: 2rem 0;
+    font-weight: 600;
+    column-gap: 20rem;
+    bottom: 0;
+    position: relative;
+}
 
   .header .menu-btn:checked ~ .menu {
     max-height: 240px;
