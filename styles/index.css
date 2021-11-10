@@ -1,0 +1,420 @@
+/************ Index *************/
+.top-container {
+  background-color: #ffc430;
+  display: flex;
+  height: 35rem;
+}
+
+.top-container h1, .top-container p {
+  color: #fff;
+  margin-left: 40px;
+}
+
+.top-container h1 {
+  margin-top: 200px;
+}
+
+.top-container img {
+  height: 80%;
+  margin-top: 110px;
+}
+
+.top-container h1 {
+  font-size: 42px;
+}
+
+.top-container p {
+  font-size: 24px;
+  padding-top: 23px;
+}
+
+#description-row {
+  height: 20rem;
+  background-color: #fefbf3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+#description-row div p {
+  width: 40%;
+  padding: 10px 20px 0px 400px;
+  font-size: 16px;
+  text-align: justify;
+}
+
+#credit-card-row {
+  background-image: linear-gradient(to bottom, #fbb12c, #fc9d00);
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#credit-card-row div {
+  color: #fefbf3;
+  font-size: 22px;
+  width: 45%;
+  padding-left: 2rem;
+}
+
+#credit-card-row div p {
+  padding-top: 1.5rem;
+}
+
+#credit-card-row img {
+  width: 30%;
+  padding-right: 10%;
+}
+
+#product-bank {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-bottom: 3rem;
+  margin-top: 20px;
+}
+
+#product-bank h1, section h3 {
+  color: #fb8b38;
+}
+
+#product-bank h1 {
+  font-size: 2.5rem;
+}
+
+#product-description {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  padding-bottom: 3rem;
+}
+
+section h3 {
+  padding-top: 20px;
+  text-align: center;
+  font-size: 24px;
+}
+
+.card-description {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 100px;
+  padding: 30px 0 30px;
+}
+
+.card-description img {
+  width: 90%;
+}
+
+.section-text {
+  font-size: 18px;
+}
+
+.section-text p {
+  margin: 20px;
+}
+
+.section-text .mobile {
+  display: none;
+}
+
+main a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #fb8b38;
+}
+
+main a:hover {
+  border-bottom: 1px solid #fb8b38;
+  padding-left: 20px;
+  cursor: pointer;
+}
+
+.cashback, #contactless {
+  width: 60%;
+  margin: 5% 25%;
+  font-size: 20px;
+}
+
+.cashback p, #contactless p {
+  padding: 20px;
+  text-align: justify;
+}
+
+.cashback p:first-child {
+  margin-right: 100px;
+}
+
+#section-text {
+  margin-left: 80px;
+}
+
+#account-row {
+  margin: 30px 0px;
+  width: 100%;
+}
+
+#account-row .mobile {
+  display: none;
+}
+
+.account-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px 0px 20px 80px;
+  padding-bottom: 3rem;
+}
+
+.account-container img {
+  width: 30%;
+}
+
+#contactless p {
+  width: 95%;
+  margin-left: 5px;
+}
+
+#international-card-description {
+  padding-top: 10px;
+  text-align: justify;
+  font-size: 22px;
+  margin-left: 75px;
+}
+
+#international-card-description p {
+  width: 90%;
+  line-height: 0.2rem;
+}
+
+#international-card-description a {
+  padding-top: 20px;
+}
+
+#section-text-2 {
+  font-size: 24px;
+}
+
+#ask-card-account {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #f6af22;
+  padding: 10px;
+}
+
+#ask-card-account img {
+  width: 30%;
+}
+
+#ask-card-account div {
+  width: 22%;
+  border: 1px solid #fafafaee;
+  border-radius: 15px;
+  background-color: #fafafaee;
+  padding: 50px 10px;
+  color: #f6af22;
+}
+#ask-card-account div h2 {
+  padding-left: 15px;
+  margin-bottom: 30px;
+}
+
+#ask-card-account div input {
+  border-style: solid;
+  border-width: 0px 0px 1px;
+  width: 250px;
+  height: 30px;
+  border-color: #f6af22;
+  margin: 10px 20px;
+  display: block;
+}
+
+#ask-card-account div button {
+  margin-left: 3.5rem;
+  width: 60%;
+  height: 30px;
+  border-radius: 10px;
+  border: 1px solid #f6af22;
+  background-color: #fafafaee;
+}
+
+#ask-card-account button:hover {
+  cursor: pointer;
+  background-color: #f6af22;
+}
+
+/********************* MEDIA QUERY *******************/
+@media screen and (min-device-width: 320px) and (max-device-width: 480px) {
+
+  /************************ INDEX ****************************/
+
+  .top-container img, #product-bank img, #discount-row img, .top-container p, .card-description h3, .card-description p, #account-row h3, #account-row .desktop, #account-row .negrito, #contactless, #discount-row p, .cashback .desktop, #international-card-description, #ask-card-account img {
+    display: none;
+  }
+
+  .top-container {
+    padding-top: 60px;
+    background-image: url(../images/mulher-de-casaco-amarelo-segurando-o-espaco-da-copia-do-cartao-de-credito.jpg);
+    background-position: center;
+    background-size: cover;
+    min-width: 375px;
+    display: flex;
+    height: 28rem;
+  }
+
+  .top-container h1 {
+    padding-top: 20px;
+    font-size: 36px;
+    width: 98%;
+  }
+
+  #description-row {
+    width: 270px;
+    text-align: justify;
+    padding: 15% 14% 0%;
+  }
+
+  #description-row div p {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    text-align: justify;
+  }
+
+  #credit-card-row {
+    padding-left: 5%;
+    display: flex;
+    flex-direction: column;
+    margin: 50px 0px 50px 10px;
+    background-image: none;
+  }
+
+  #credit-card-row img {
+    display: block;
+  }
+
+  #credit-card-row h1 {
+    font-size: 26px;
+    color: black;
+  }
+
+  #credit-card-row img {
+    width: 80%;
+  }
+
+  #credit-card-row p {
+    text-align: justify;
+    width: 92%;
+    color: black;
+  }
+
+  #credit-card-row div {
+    width: 90%;
+  }
+
+  #product-bank {
+    background-image: url("https://image.freepik.com/fotos-gratis/retrato-de-uma-alegre-garota-loira-em-uma-camiseta-laranja_176420-33359.jpg");
+    background-position: center;
+    background-size: cover;
+    min-width: 375px;
+    height: 250px;
+  }
+
+  #product-bank h1 {
+    padding-right: 150px;
+  }
+
+  .card-description .section-text .mobile {
+    display: inline-block;
+  }
+
+  .card-description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    text-align: center;
+    padding: 30px 20px;
+    margin-left: 0px;
+  }
+
+  .cashback {
+    width: 100%;
+    padding: 0px 0px 40px 20px;
+    margin: 0px;
+  }
+
+  .cashback h3 {
+    padding-bottom: 5px;
+    font-size: 1.5rem;
+  }
+
+  #account-row .mobile {
+    display: inline;
+    padding: 5px;
+  }
+
+  #account-row p {
+    font-size: 22px;
+    text-align: center;
+  }
+
+  #account-row img {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .account-container {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    padding-bottom: 1rem;
+  }
+
+  #discount-row {
+    padding: 30px 0px 0px 10px;
+    width: 100%;
+    text-align: center;
+    font-size: 26px;
+  }
+
+  #discount-row h3 {
+    color: black;
+  }
+
+  #ask-card-account div {
+    width: 80%;
+    border: 1px solid #fafafaee;
+    border-radius: 15px;
+    background-color: #fafafaee;
+    padding: 50px 10px;
+    color: #f6af22;
+  }
+  #ask-card-account div h2 {
+    padding-left: 10px;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  #ask-card-account div button {
+    margin-left: 3.5rem;
+    width: 60%;
+    height: 30px;
+    border-radius: 10px;
+    border: 1px solid #f6af22;
+    background-color: #fafafaee;
+  }
+
+  main a {
+    padding: 5px;
+    border-radius: 10px;
+    margin-top: 10px;
+    background-color: #fff;
+    border: 1px solid #fb8b38;
+    color: black;
+  }
+}

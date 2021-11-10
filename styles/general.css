@@ -1,0 +1,340 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, li {
+  font-family: "Inter";
+  font-weight: bold;
+}
+
+p {
+  font-family: "Roboto";
+  font-weight: 800;
+}
+
+/********************** Header **********************/
+.header {
+  background-color: #ff914d;
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  height: 60px;
+}
+
+.header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  background-color: #ff914d;
+  position: relative;
+  right: 420px;
+}
+
+.header li a {
+  display: block;
+  padding: 20px 20px;
+  text-decoration: none;
+  color: #fefbf3;
+}
+
+.header .logo {
+  display: flex;
+  padding: 10px 20px;
+}
+
+.negrito {
+    font-weight: bold;
+
+}
+.header li {
+  float: left;
+
+}
+
+.header li a {
+  padding: 20px 30px;
+}
+
+.header .menu-icon,
+input {
+  display: none;
+}
+
+.logo img {
+  width: 15%;
+}
+
+.nav-login {
+  display: flex;
+}
+
+.nav-login img {
+  width: 20%;
+  height: 20px;
+  margin-top: 20px;
+  position: relative;
+  left: 20px;
+}
+
+/********************** Footer **********************/
+
+footer img {
+  width: 9%;
+}
+
+footer a {
+  text-decoration: none;
+  color: black;
+}
+
+footer li {
+  list-style-type: none;
+  padding-top: 1rem;
+}
+
+footer {
+  background-color: rgb(255, 239, 209);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  justify-items: center;
+  padding: 2rem 0;
+  font-weight: 600;
+  column-gap: 10rem;
+}
+
+/* ******* FAQ *********** */
+
+#faq-section {
+    width: 90%;
+    padding-left: 50px;
+    margin-bottom: 50px;
+}
+
+footer li:hover a, footer p:hover {
+  color: #fb8b38;
+  cursor: pointer;
+
+}
+
+footer h4:hover {
+  color: #fb8b38;
+  cursor: default;
+}
+
+.footer-contact p:nth-child(3) {
+  padding-top: 1rem;
+}
+
+.footer-social-media a {
+  padding: 1rem;
+}
+
+.footer-social-media h4 {
+  padding-bottom: 1rem;
+}
+
+.referencia {
+  font-size: 10px;
+  margin-top: 40px;
+}
+
+/* ****** TRABALHE CONOSCO ********* */
+#career-row form {
+  padding-left: 50px;
+}
+
+#career-row input {
+  margin: 20px 0px 0px;
+  padding: 6px;
+  border-radius: 5px;
+}
+
+#career-row form {
+  padding-left: 50px;
+}
+
+#cv input {
+  position: relative;
+  left: 38px;
+}
+
+#email input {
+  padding: 28px 20px;
+  position: relative;
+  user-select: none;
+}
+
+#btn-career {
+  position: relative;
+  left: 150px;
+}
+
+#btn-career input {
+  background-color: #fafafaee;
+}
+
+#btn-career input:hover {
+  cursor: pointer;
+}
+
+/* #jovem-trabalho{
+  position: relative;
+  top: 500px;
+} */
+
+/********************* MEDIA QUERY *******************/
+@media screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  /**************** HEADER ********************/
+  body {
+    min-width: 375px;
+  }
+
+  .header {
+    min-height: 60px;
+    display: grid;
+    grid-template-columns: 3.5fr 1fr;
+    align-items: start;
+    min-width: 375px;
+  }
+
+  .logo img {
+    width: 20%;
+    margin-top: 0;
+  }
+
+  .header ul {
+    position: relative;
+    right: 0px;
+    left: 82px;
+    top: -20px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .nav-login img {
+    width: 10%;
+    height: 20px;
+    margin-top: 15px;
+  }
+
+  .header .menu {
+    clear: both;
+    max-height: 0;
+    transition: max-height 0.2s ease-out;
+  }
+
+  .header .menu-icon {
+    cursor: pointer;
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#career-row form {
+    padding-left: 50px;
+}
+
+#career-row input {
+    margin: 20px 0px 0px;
+    padding: 6px;
+    border-radius: 5px;
+}
+
+#email input {
+    padding: 28px 20px;
+    position: relative;
+    user-select: none;
+  }
+
+  .header .menu-icon .navicon {
+    background: #333;
+    display: block;
+    height: 2px;
+    position: relative;
+    transition: background 0.2s ease-out;
+    width: 18px;
+  }
+
+  .header .menu-icon .navicon:before, .header .menu-icon .navicon:after {
+    background: #333;
+    content: "";
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all 0.2s ease-out;
+    width: 100%;
+  }
+
+  .header .menu-icon .navicon:before {
+    top: 5px;
+  }
+
+  .header .menu-icon .navicon:after {
+    top: -5px;
+  }
+
+  .header .menu-btn {
+    display: none;
+  }
+
+  #faq-subtitle img {
+    display: none;
+  }
+
+
+footer {
+    background-color: rgb(255, 239, 209);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    justify-items: center;
+    padding: 2rem 0;
+    font-weight: 600;
+    column-gap: 20rem;
+    bottom: 0;
+    position: relative;
+}
+
+  .header .menu-btn:checked ~ .menu {
+    max-height: 240px;
+  }
+
+  .header .menu-btn:checked ~ .menu-icon .navicon {
+    background: transparent;
+  }
+
+  .header .menu-btn:checked ~ .menu-icon .navicon:before {
+    transform: rotate(-45deg);
+  }
+
+  .header .menu-btn:checked ~ .menu-icon .navicon:after {
+    transform: rotate(45deg);
+  }
+
+  .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before, .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+    top: 0;
+  }
+
+  /**************************** Footer *******************/
+
+  footer {
+    display: grid;
+    grid-template-columns: 1fr;
+    column-gap: 5px;
+    font-size: 12px;
+    width: 100vw;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  footer img {
+    width: 5%;
+  }
+}
